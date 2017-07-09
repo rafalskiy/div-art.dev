@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
         <!-- Styles -->
         <style>
             html, body {
@@ -91,5 +91,6 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

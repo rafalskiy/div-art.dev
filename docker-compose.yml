@@ -7,6 +7,8 @@ services:
       - MYSQL_DATABASE=divart
       - MYSQL_USER=divart
       - MYSQL_PASSWORD=divart
+    ports:
+      - "13306:3306"
 
   web:
     image: php:7.1.6-apache
