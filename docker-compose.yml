@@ -1,0 +1,18 @@
+version: "2"
+services:
+  db:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=divart
+      - MYSQL_USER=divart
+      - MYSQL_PASSWORD=divart
+
+  web:
+    image: php:7.1.6-apache
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "18080:80"
+    links:
+      - db
